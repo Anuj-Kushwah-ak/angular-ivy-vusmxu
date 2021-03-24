@@ -7,18 +7,23 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { CoursesComponent } from "./courses/courses.component";
 import { CourseDetailComponent } from "./course-detail/course-detail.component";
+import { CourseBComponent } from "./course-b/course-b.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([{ path: "", component: CoursesComponent }])
+    RouterModule.forRoot([
+      { path: "", component: CoursesComponent },
+      { path: "courses/course-a", component: CourseBComponent }
+    ])
   ],
   declarations: [
     AppComponent,
     HelloComponent,
     CoursesComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    CourseBComponent
   ],
   bootstrap: [AppComponent]
 })

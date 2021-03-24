@@ -1,8 +1,5 @@
 <div *ngIf="course">
-  <h2>{{course.name | uppercase}} </h2>
-  <div><span>ID:</span>
-    {{course.id}}</div>
-  <label>
-    Name:<input [(ngModel)]="course.name">
-  </label>
+  <h2>{{course.name | uppercase}}</h2>
+  <div><span [routerLink]="['courses/course-a']">ID:</span> {{course.id}}</div>
+  <label> Name:<input [(ngModel)]="course.name" /> </label>
 </div>
