@@ -1,8 +1,9 @@
 <h2>Welcome to My app
 </h2>
 <ul class="courses">
-  <li *ngFor="let course of courses" [class.selected]="course === selectedCourse" (click)="onSelect(course)">
-  <li><span class="badge">{{courses.id}}</span>{{courses.name}}</li>
+  <li *ngFor="let x of courses" [class.selected]="x === selectedCourse" (click)="onSelect(x)">
+  <span class="badge">{{x.id}}</span>{{x.name}}
+  </li>
 </ul>
 <div *ngIf="selectedCourse">
   <h2>{{selectedCourse.name | uppercase}} </h2>
