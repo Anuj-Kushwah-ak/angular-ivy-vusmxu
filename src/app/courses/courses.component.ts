@@ -1,4 +1,4 @@
-import { Component, OnInit, } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Course } from "../course";
 import { COURSES } from "../mock-courses";
 
@@ -15,7 +15,7 @@ export class CoursesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  onSelect(course: Course): void {
-    this.selectedCourse = course;
+  onSelect(x: Course): void {
+    this.selectedCourse = x;
   }
 }
