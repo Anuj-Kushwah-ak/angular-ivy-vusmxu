@@ -15,7 +15,7 @@ import { CourseBComponent } from "./course-b/course-b.component";
     FormsModule,
     RouterModule.forRoot([
       { path: "", component: CoursesComponent },
-      { path: "courses/course-a", component: CourseBComponent }
+      { path: "['/course', course.id]", component: CourseBComponent }
     ])
   ],
   declarations: [
